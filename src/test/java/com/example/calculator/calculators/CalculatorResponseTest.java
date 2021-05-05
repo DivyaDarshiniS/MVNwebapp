@@ -1,10 +1,13 @@
 package com.example.calculator.calculators;
 
+import org.apache.http.HttpResponse;
 import static org.hamcrest.CoreMatchers.containsString;
+
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
-import org.apache.catalina.HttpResponse;
+//import org.apache.catalina.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
