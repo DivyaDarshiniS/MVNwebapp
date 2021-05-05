@@ -19,7 +19,7 @@ public class CalculatorResponseTest {
 	@Test
     public void testPing() throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet("http://localhost:9999/calculator/api/calculator/ping");
+        HttpGet httpGet = new HttpGet("http://localhost:8090/calculators/webresources/myresource/ping");
         HttpResponse response = httpclient.execute(httpGet);
         assertEquals(200, response.getStatusLine().getStatusCode());
         assertThat(EntityUtils.toString(response.getEntity()), containsString("Welcome to Java Maven Calculator Web App!!!"));
@@ -28,7 +28,7 @@ public class CalculatorResponseTest {
     @Test
     public void testAdd() throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet("http://localhost:9999/calculator/api/calculator/add?x=8&y=26");
+        HttpGet httpGet = new HttpGet("http://localhost:8090/calculators/webresources/myresource/add?x=8&y=26");
         HttpResponse response = httpclient.execute(httpGet);
         assertEquals(200, response.getStatusLine().getStatusCode());
         assertThat(EntityUtils.toString(response.getEntity()), containsString("\"result\":34"));
@@ -37,7 +37,7 @@ public class CalculatorResponseTest {
     @Test
     public void testSub() throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet("http://localhost:9999/calculator/api/calculator/sub?x=12&y=8");
+        HttpGet httpGet = new HttpGet("http://localhost:8090/calculators/webresources/myresource/sub?x=12&y=8");
         HttpResponse response = httpclient.execute(httpGet);
         assertEquals(200, response.getStatusLine().getStatusCode());
         assertThat(EntityUtils.toString(response.getEntity()), containsString("\"result\":4"));
@@ -46,7 +46,7 @@ public class CalculatorResponseTest {
     @Test
     public void testMul() throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet("http://localhost:9999/calculator/api/calculator/mul?x=11&y=8");
+        HttpGet httpGet = new HttpGet("http://localhost:8090/calculators/webresources/myresource/mul?x=11&y=8");
         HttpResponse response = httpclient.execute(httpGet);
         assertEquals(200, response.getStatusLine().getStatusCode());
         assertThat(EntityUtils.toString(response.getEntity()), containsString("\"result\":88"));
@@ -55,7 +55,7 @@ public class CalculatorResponseTest {
     @Test
     public void testDiv() throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet("http://localhost:9999/calculator/api/calculator/div?x=12&y=12");
+        HttpGet httpGet = new HttpGet("http://localhost:8090/calculators/webresources/myresource/div?x=12&y=12");
         HttpResponse response = httpclient.execute(httpGet);
         assertEquals(200, response.getStatusLine().getStatusCode());
         assertThat(EntityUtils.toString(response.getEntity()), containsString("\"result\":1"));
