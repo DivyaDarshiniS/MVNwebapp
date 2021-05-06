@@ -8,21 +8,21 @@ stages{
 			}
 		}
 	}
-	stage{'Testing Stage'){
+	stage('Testing Stage'){
 		steps{
 			withMaven(maven : 'apache-maven-3.8.1'){
 			bat 'mvn test'
 			}
 		}
 	}
-	stage{'Install stage'){
+	stage('Install stage'){
 		steps{
 			withMaven(maven : 'apache-maven-3.8.1'){
 			bat 'mvn install'
 			}
 		}
 	}
-}
-}
+
+
 }
 }
