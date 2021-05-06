@@ -24,6 +24,7 @@ stages{
 	}
 stage('deploy to Tomcat'){
 steps{
+bat 'xcopy "C:\Users\User\.jenkins\workspace\mvnwebapp1\target\calculators.war" "C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps" '
 deploy adapters: [tomcat9(credentialsId: '7ca12bd3-9274-4ad3-9b1f-9b30847bb96e', path: '', url: 'http://localhost:8090/')], contextPath: 'calculators', war: '**/*.war'
 }
 }
