@@ -43,7 +43,7 @@ public class CalculatorResponseTest {
         assertThat(EntityUtils.toString(response.getEntity()), containsString("\"result\":4"));
     }
 
-  /*  @Test
+   @Test
     public void testMul() throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet("http://localhost:8090/calculators/webresources/myresource/mul?x=11&y=8");
@@ -60,5 +60,5 @@ public class CalculatorResponseTest {
         assertEquals(200, response.getStatusLine().getStatusCode());
         assertThat(EntityUtils.toString(response.getEntity()), containsString("\"result\":1"));
     }
-*/
+
 }
