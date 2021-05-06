@@ -23,11 +23,11 @@ stages{
 		}
 	}
 stage('Deploy to Tomcat'){
-bat "copy target\\calculators.war \"C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps""
+bat "copy target\\calculators.war \"C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps""
 }
 stage('Start Tomcat Server'){
 sleep(time:5,unit:"SECONDS")
-bat "C:\Program Files\Apache Software Foundation\Tomcat 9.0\bin\startup.bat"
+bat "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\bin\\startup.bat"
 sleep(time:100,unit:"SECONDS")
 }
 }
