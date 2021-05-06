@@ -24,7 +24,7 @@ stages{
 	}
 stage('deploy to Tomcat'){
 steps{
-deploy adapters: [tomcat9(credentialsId: '7ca12bd3-9274-4ad3-9b1f-9b30847bb96e', path: '', url: 'http://localhost:8090/')], contextPath: 'mvnwebapp1', war: '**/*.war'
+deploy adapters: [tomcat9(credentialsId: '7ca12bd3-9274-4ad3-9b1f-9b30847bb96e', path: '', url: 'http://localhost:8090/')], contextPath: 'calculators', war: '**/*.war'
 }
 }
 }
