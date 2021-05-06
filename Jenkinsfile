@@ -12,6 +12,15 @@ stages{
 		steps{
 			withMaven(maven : 'apache-maven-3.8.1'){
 			bat 'mvn test'
+			// publish html
+        publishHTML target: [
+            allowMissing: false,
+            alwaysLinkToLastBuild: false,
+            keepAll: true,
+            reportDir: 'coverage',
+            reportFiles: 'index.html',
+            reportName: 'Test Report'
+          ]
 			}
 		}
 	}
