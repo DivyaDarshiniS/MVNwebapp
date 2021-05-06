@@ -28,7 +28,7 @@ stages{
               reportName: 'RCov Report'
             ]
         }
-		
+		}
 	}
 	stage('Install stage'){
 		steps{
