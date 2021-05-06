@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.example.calculator.calculators.CalculatorResponseTest" time="0.675" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.example.calculator.calculators.CalculatorResponseTest" time="0.688" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
@@ -65,9 +65,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.example.calculator.calculators.CalculatorResponseTest" name="testAdd" time="0.66"/>
+  <testcase classname="com.example.calculator.calculators.CalculatorResponseTest" name="testDiv" time="0.674"/>
+  <testcase classname="com.example.calculator.calculators.CalculatorResponseTest" name="testSub" time="0.003"/>
+  <testcase classname="com.example.calculator.calculators.CalculatorResponseTest" name="testPing" time="0.004"/>
   <testcase classname="com.example.calculator.calculators.CalculatorResponseTest" name="testMul" time="0.003"/>
-  <testcase classname="com.example.calculator.calculators.CalculatorResponseTest" name="testDiv" time="0.005"/>
-  <testcase classname="com.example.calculator.calculators.CalculatorResponseTest" name="testSub" time="0.004"/>
-  <testcase classname="com.example.calculator.calculators.CalculatorResponseTest" name="testPing" time="0.003"/>
+  <testcase classname="com.example.calculator.calculators.CalculatorResponseTest" name="testAdd" time="0.004"/>
 </testsuite>
