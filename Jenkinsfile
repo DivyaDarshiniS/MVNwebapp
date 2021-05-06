@@ -1,4 +1,4 @@
-pipeline{
+pipeline{  
 agent any
 stages{
 	stage('Compile Stage'){
@@ -22,5 +22,7 @@ stages{
 			}
 		}
 	}
+}
+}
 }
 }
