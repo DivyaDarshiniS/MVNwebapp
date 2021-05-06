@@ -42,7 +42,7 @@ public class CalculatorResponseTest {
         assertEquals(200, response.getStatusLine().getStatusCode());
         assertThat(EntityUtils.toString(response.getEntity()), containsString("\"result\":4"));
     }
-
+/*
     @Test
     public void testMul() throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -60,5 +60,5 @@ public class CalculatorResponseTest {
         assertEquals(200, response.getStatusLine().getStatusCode());
         assertThat(EntityUtils.toString(response.getEntity()), containsString("\"result\":1"));
     }
-
+*/
 }

@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.calculator.calculators.CalculatorResponseTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.668 sec <<< FAILURE! - in com.example.calculator.calculators.CalculatorResponseTest
-testMul(com.example.calculator.calculators.CalculatorResponseTest)  Time elapsed: 0.628 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<200> but was:<404>
-	at com.example.calculator.calculators.CalculatorResponseTest.testMul(CalculatorResponseTest.java:51)
-
-testDiv(com.example.calculator.calculators.CalculatorResponseTest)  Time elapsed: 0.002 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<200> but was:<404>
-	at com.example.calculator.calculators.CalculatorResponseTest.testDiv(CalculatorResponseTest.java:60)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.65 sec - in com.example.calculator.calculators.CalculatorResponseTest
