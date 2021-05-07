@@ -38,7 +38,7 @@ public class CalculatorService {
     public CalculatorResponse Sub(@QueryParam("x") int x, @QueryParam("y") int y) {
         return new CalculatorResponse(x, y, x - y);
     }
-
+/*
     @GET
     @Path("mul")
     @Produces(MediaType.APPLICATION_JSON)
@@ -51,5 +51,5 @@ public class CalculatorService {
     @Produces(MediaType.APPLICATION_JSON)
     public CalculatorResponse Div(@QueryParam("x") int x, @QueryParam("y") int y) {
         return new CalculatorResponse(x, y, x / y);
-    }
+    }*/
 	}
